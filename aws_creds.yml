@@ -34,7 +34,7 @@
     tower_job_template:
       name: "3 tier app on Prod"
       credential: "Machine"
-      tower_host: http://tower1.{{tower_guid}}.example.opentlc.com
+      tower_host: tower1.{{tower_guid}}.example.opentlc.com
       tower_username: admin
       tower_password: r3dh4t1!
       tower_verify_ssl: no
@@ -46,7 +46,7 @@
     tower_job_template:
       name: "Smoke test Prod env"
       credential: "Machine"
-      tower_host: http://tower1.{{tower_guid}}.example.opentlc.com
+      tower_host: tower1.{{tower_guid}}.example.opentlc.com
       tower_username: admin
       tower_password: r3dh4t1!
       tower_verify_ssl: no
