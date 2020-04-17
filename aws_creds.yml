@@ -34,9 +34,10 @@
     tower_job_template:
       name: "3 tier app on Prod"
       credential: "Machine"
-      tower_host: tower1.{{tower_guid}}.example.opentlc.com
+      tower_host: http://tower1.{{tower_guid}}.example.opentlc.com
       tower_username: admin
       tower_password: r3dh4t1!
+      tower_verify_ssl: no
       state: present
       job_type: run
       playbook: site-3tier-app.yml
@@ -45,9 +46,10 @@
     tower_job_template:
       name: "Smoke test Prod env"
       credential: "Machine"
-      tower_host: tower1.{{tower_guid}}.example.opentlc.com
+      tower_host: http://tower1.{{tower_guid}}.example.opentlc.com
       tower_username: admin
       tower_password: r3dh4t1!
+      tower_verify_ssl: no
       state: present
       job_type: run
       playbook: site-smoketest-aws.yml
